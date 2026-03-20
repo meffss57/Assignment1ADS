@@ -9,9 +9,10 @@ public class Task3_PrimeCheck {
         if (n % divisor == 0) {
             return false;
         }
-        return isPrimeHelper(n, divisor + 1);
+        else{
+            return isPrimeHelper(n, divisor + 1);
+        }
     }
-
     public static boolean isPrime(int n) {
         if (n < 2) return false;
         return isPrimeHelper(n, 2);

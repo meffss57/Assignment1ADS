@@ -6,7 +6,9 @@ public class Task2_Average {
         if (index == arr.length) {
             return 0;
         }
-        return arr[index] + recursiveSum(arr, index + 1);
+        else{
+            return arr[index] + recursiveSum(arr, index + 1);
+        }
     }
 
     public static void main(String[] args) {
