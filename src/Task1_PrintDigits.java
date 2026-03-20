@@ -10,10 +10,11 @@ public class Task1_PrintDigits {
             System.out.println(n);
             return;
         }
-        printDigits(n / 10);
-        System.out.println(n % 10);
+        else{
+            printDigits(n / 10);
+            System.out.println(n % 10);
+        }
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
